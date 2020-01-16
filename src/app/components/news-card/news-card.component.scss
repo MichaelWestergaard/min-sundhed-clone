@@ -1,0 +1,24 @@
+.card {
+    width: 300px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.card-header {
+    padding: 24px;
+}
+
+.news-image {
+    max-height: 150px;
+    width: 100%;
+}
+
+ion-slides {
+    overflow:auto;
+    padding-bottom: 10px;
+}
+
+ion-slide {
+    width: 300px;
+    float: left;
+}

@@ -1,0 +1,19 @@
+<ion-slides [options]="slideOptions">
+  <ion-slide *ngFor="let i of [0,1,2]">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Find nærmeste behandler</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>
+          Find en tandlæge, fysioterapeut eller anden behandler i nærheden af dig
+        </p>
+        <div class="bottom-options">
+          <ion-button fill="clear">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+</ion-slides>

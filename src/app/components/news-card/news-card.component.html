@@ -1,0 +1,12 @@
+
+
+<ion-slides [options]="slideOptions">
+  <ion-slide *ngFor="let article of news">
+    <ion-card button (click)="showModal(article)" class="card">
+      <ion-card-header class="card-header">
+        <ion-card-title>{{article.title}}</ion-card-title>
+      </ion-card-header>
+      <img class="news-image" src="{{article.image}}" alt="">
+    </ion-card>
+  </ion-slide>
+</ion-slides>

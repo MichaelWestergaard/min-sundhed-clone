@@ -1,4 +1,15 @@
-.welcome-card img {
-  max-height: 35vh;
-  overflow: hidden;
+.tab {
+  --background: #FFFBFC;
+  --padding-start: 8px;
+  --padding-end: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ion-toolbar {
+  // border-bottom-left-radius: 20px;
+  // border-bottom-right-radius: 20px;
+  // border-style: solid;
 }

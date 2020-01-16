@@ -1,0 +1,27 @@
+.card {
+    background-color: #f3efec;
+}
+
+.icon {
+    color: #a00929;
+    padding: 10px;
+    font-size: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+.button {
+    display: block;
+    color: #a00929;
+    margin: 0 auto;
+    --border-radius: 20px;
+    --border-color: #a00929;
+    --ripple-color: #a00929;
+    --color-activated: #a00929;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.test {
+    padding: 50px;
+}
