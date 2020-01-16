@@ -1,0 +1,33 @@
+ion-card {
+    width: 300px;
+    border-radius: 15px;
+    padding: 16px;
+    text-align: left;
+}
+
+.bottom-options {
+    padding: 24px 0;
+}
+
+
+ion-button {
+    --border-radius: 10px;
+    --ripple-color: #a00929;
+    --color-activated: #a00929;
+    float: right;
+}
+
+ion-icon {
+    color: #a00929;
+    font-size: 30px;
+}
+
+ion-slides {
+    overflow:auto;
+    padding-bottom: 10px;
+}
+
+ion-slide {
+    width: 300px;
+    float: left;
+}

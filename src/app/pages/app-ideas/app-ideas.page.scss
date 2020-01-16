@@ -1,13 +1,17 @@
-.card {
-    background-color: #f3efec;
+ion-title {
+    text-align: center;
+    padding-top: 20px;
+    ion-icon {
+        font-size: 40px;
+    }
 }
 
-.icon {
+ion-icon {
     color: #a00929;
-    padding: 10px;
-    font-size: 50px;
-    margin: 0 auto;
-    display: block;
+}
+
+ion-content, .container {
+    height: 100%;
 }
 
 .button {
@@ -19,9 +23,4 @@
     --ripple-color: #a00929;
     --color-activated: #a00929;
     width: 50%;
-    margin-top: 20px;
-}
-
-.test {
-    padding: 50px;
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { AppIdeasPage } from 'src/app/pages/app-ideas/app-ideas.page';
 
 @Component({
   selector: 'app-app-ideas',
@@ -7,8 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppIdeasComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modalController: ModalController) { }
 
   ngOnInit() {}
+
+  async showModal() {
+    const modal = await this.modalController.create({
+      component: AppIdeasPage,
+      cssClass: 'rounded'
+    });
+    return await modal.present();
+  }
 
 }

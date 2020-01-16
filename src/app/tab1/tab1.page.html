@@ -1,13 +1,25 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
+  <ion-toolbar translucent="">
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="text-center">
+      MinSundhed
     </ion-title>
+    
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="people"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="tab">
     <app-welcome></app-welcome>
-    <app-news-card></app-news-card>
+    <app-news-card class="ion-padding-bottom"></app-news-card>
     <app-app-ideas></app-app-ideas>
+    <app-quick-links></app-quick-links>
 </ion-content>
