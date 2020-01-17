@@ -7,12 +7,10 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
   styleUrls: ['./welcome.component.scss'],
 })
 export class WelcomeComponent implements OnInit {
-  user = null;
 
-  constructor(private auth: AuthenticationService) {}
+  constructor() {}
  
   ngOnInit() {
-    this.user = this.auth.getUserInfo();
   }
 
 }
