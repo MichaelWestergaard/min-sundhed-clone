@@ -10,11 +10,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppIdeasPage } from 'src/app/pages/app-ideas/app-ideas.page';
 import { NewsDetailsPage } from 'src/app/pages/news-details/news-details.page';
+import { IonicStorageModule } from '@ionic/storage';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [AppComponent, AppIdeasPage, NewsDetailsPage],
   entryComponents: [AppIdeasPage, NewsDetailsPage],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicStorageModule.forRoot(), HttpClientModule ],
   providers: [
     StatusBar,
     SplashScreen,

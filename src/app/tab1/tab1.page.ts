@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-tab1',
@@ -7,7 +8,16 @@ import { Component } from '@angular/core';
 })
 
 export class Tab1Page {
+  user = null;
 
-  constructor() {}
+  constructor(private auth: AuthenticationService) {}
+ 
+  ionViewWillEnter() {
+    this.user = this.auth.getUser();
+  }
+ 
+  logout() {
+    this.auth.logout();
+  }
 
 }
