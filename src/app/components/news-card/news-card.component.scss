@@ -1,7 +1,9 @@
 .card {
-    width: 300px;
+    width: 90%;
     border-radius: 15px;
     text-align: left;
+    --background: #fff;
+    max-height: 225px;
 }
 
 .card-header {
@@ -9,7 +11,7 @@
 }
 
 .news-image {
-    max-height: 150px;
+    max-height: 200px;
     width: 100%;
 }
 
@@ -19,6 +21,6 @@ ion-slides {
 }
 
 ion-slide {
-    width: 300px;
+    width: 90%;
     float: left;
 }

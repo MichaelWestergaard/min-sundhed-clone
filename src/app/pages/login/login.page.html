@@ -1,0 +1,83 @@
+<ion-content>
+  <ion-grid style="height: 100%;">
+      <ion-row class="align row-top">
+        <ion-title class="text-center" size="large">Log på</ion-title>
+      </ion-row>
+      <ion-row class="align">
+        <ion-grid>
+          <ion-row>
+            <ion-title size="small">Indtast pinkode</ion-title>
+          </ion-row>
+          <ion-row class="ion-text-center pincode-container">
+            <ion-col class="pincode-col">
+              <span id="pin-1" [ngClass]="(numbers.length == 0) ? 'active' : 'done'" class="pincode-span"></span>
+            </ion-col>
+            <ion-col class="pincode-col">
+              <span id="pin-2" [ngClass]="(numbers.length == 1) ? 'active' : (numbers.length >= 2) ? 'done' : ''"  class="pincode-span"></span>
+            </ion-col>
+            <ion-col class="pincode-col">
+              <span id="pin-3" [ngClass]="(numbers.length == 2) ? 'active' : (numbers.length >= 3) ? 'done' : ''" class="pincode-span"></span>
+            </ion-col>
+            <ion-col class="pincode-col">
+              <span id="pin-4" [ngClass]="(numbers.length == 3) ? 'active' : (numbers.length >= 4) ? 'done' : ''" class="pincode-span"></span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-row>
+      <ion-row class="row-bottom">
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(1)">1</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(2)">2</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(3)">3</ion-button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(4)">4</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(5)">5</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(6)">6</ion-button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(7)">7</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(8)">8</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(9)">9</ion-button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="deleteNumber()">
+                  <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+                </ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear" expand="block" (click)="addNumber(0)">0</ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear" expand="block">
+                  <ion-icon slot="icon-only" name="finger-print"></ion-icon>
+                </ion-button>
+              </ion-col>
+            </ion-row>
+  
+          </ion-grid>
+        </ion-card>
+      </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,85 @@
+ion-content {
+    --background: #f3efec;
+}
+
+ion-title {
+    text-align: center;
+    padding: 30px 0;
+}
+
+ion-row.align {
+    height: 33%;
+}
+
+ion-card {
+    border-radius: 15px;
+    margin: 20px 30px;
+    --background: #fff;
+    width: 100%;
+
+    ion-button {
+        --border-radius: 0;
+        --border-color: #a00929;
+        --ripple-color: #a00929;
+        --color-activated: #a00929;
+        --color: #000;
+        margin: 0;
+        height: 50px;
+    }
+
+    ion-row:not(:last-child) {
+        border-bottom: 1px #cecece solid;
+    }
+
+    ion-col:not(:last-child) {
+        border-right: 1px #cecece solid;
+    }
+
+    ion-icon {
+        font-size: 20px;
+        color: #a00929;
+    }
+
+    ion-grid, ion-col {
+        padding: 0;
+    }
+}
+
+.row-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.pincode-container {
+    width: 70%;
+    margin: auto;
+    height: 70px;
+}
+
+.pincode-col {
+    margin: auto;
+    display: ruby;
+
+    .pincode-span {
+        display: block;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #d4d4d4;
+        color: #a00929;
+        transition: all .2s ease-in-out;
+    }
+    
+    .pincode-span.active {
+        border: 2px solid #a00929;
+        background-color: #fff;
+    }
+    
+    .pincode-span.done {
+        height: 25px;
+        width: 25px;
+        background-color: #a00929;
+    }
+}
